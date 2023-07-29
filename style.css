@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
 body {
     display: flex;
     flex-direction: column;
@@ -7,7 +8,6 @@ body {
     background-position: center;
     height: 100vh;
     color:azure
-    
 }
 form {
     margin: 0 auto;
@@ -19,15 +19,33 @@ dt {
 #allData {
     height: 87vh;
     flex-direction: row;
-    position: relative;
+}
+#scrollBody {
+    /* background: black; */
+    overflow: hidden;
+    font-family: 'Roboto';
+    float: right;
+    height: 80vh;
+    width: 67vw;
+    padding: 90% 0 0 0;
+}
+#openingWrap {
+    display: flex;
+    height: 100%;
+    width: 60%;
 }
 
 #list {
     padding: 2rem;
 }
 .opening {
-    margin: 0 auto;
-    float: right;
+    color: #ffc909;
+    font-size: 2vw;
+    line-height: 1.5em;
+    text-align: justify;
+    position: relative;
+    animation: scroll 400s linear forwards;
+
 }
 
 .barDiv {
@@ -53,5 +71,14 @@ dt {
     }
     100% {
         width: 100%;
+    }
+}
+
+@keyframes scroll {
+    from {
+        top: 0;
+    }
+    to {
+        top: -7500px;
     }
 }
