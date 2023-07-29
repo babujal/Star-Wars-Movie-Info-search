@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/11/news-article-images-star-wars-goh-splash.jpg.adapt.crop16x9.1023w.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:azure
+    
+}
+form {
+    margin: 0 auto;
+}
+dt {
+    margin: 0;
+}
+
+#allData {
+    height: 87vh;
+    flex-direction: row;
+    position: relative;
+}
+
+#list {
+    padding: 2rem;
+}
+.opening {
+    margin: 0 auto;
+    float: right;
+}
+
+.barDiv {
+    width: 80vw;
+    height: 2vh;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+
+.loadingBar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+    animation: loading 35s ease-in-out;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
