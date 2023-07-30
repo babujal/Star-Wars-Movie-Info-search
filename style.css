@@ -2,15 +2,15 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/11/news-article-images-star-wars-goh-splash.jpg.adapt.crop16x9.1023w.jpg);
+    background-image: url(https://i0.wp.com/views.fr/wp-content/uploads/2020/05/vador-pfa.jpg?fit=1200%2C627&ssl=1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 99vh;
     color:azure
 }
 form {
-    margin: 0 auto;
+    margin:10px auto;
 }
 dt {
     margin: 0;
@@ -21,22 +21,25 @@ dt {
     flex-direction: row;
 }
 #scrollBody {
-    /* background: black; */
+    display: flex;
     overflow: hidden;
     font-family: 'Roboto';
-    float: right;
+    float: center;
     height: 80vh;
-    width: 67vw;
-    padding: 90% 0 0 0;
+    width: 100vw;
+    padding: 26% 0 0 0;
 }
 #openingWrap {
     display: flex;
-    height: 100%;
-    width: 60%;
+    /* height: 100%; */
+    justify-content: center;
+    width: 100vw;
+    perspective: 400px;
 }
 
 #list {
     padding: 2rem;
+    margin: 5rem 0 3rem;
 }
 .opening {
     color: #ffc909;
@@ -44,8 +47,7 @@ dt {
     line-height: 1.5em;
     text-align: justify;
     position: relative;
-    animation: scroll 400s linear forwards;
-
+    animation: scroll 500s linear forwards;
 }
 
 .barDiv {
@@ -54,11 +56,11 @@ dt {
     background-color: #f2f2f2;
     border-radius: 3px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     
 }
 
-.loadingBar {
+#loadingBar {
     height: 100%;
     background-color: #4CAF50;
     width: 0%;
@@ -77,8 +79,10 @@ dt {
 @keyframes scroll {
     from {
         top: 0;
+        transform: translateZ(0) rotateX(20deg);
     }
     to {
         top: -7500px;
+        transform: translateZ(-2500px) rotateX(21deg);
     }
 }
