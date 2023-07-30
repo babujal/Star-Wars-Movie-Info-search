@@ -1,4 +1,5 @@
 const $ = (id) => {return document.getElementById(id)}
+const getElByClass = (elClass) => {return document.querySelector(elClass)}
 window.onload = (e) => { 
     const tagleLoading = () => {
         const barDiv = document.querySelector('.barDiv')
@@ -25,16 +26,14 @@ window.onload = (e) => {
                 // All I want to do with the data goes down here
                 const userInput = document.querySelector('#title')
                 let placeHolderVal = userInput.value
-                // console.log(placeHolderVal)
                     for (let i = 0; i < data.results.length; i++) {
                         const arrays = data.results[i]
                         let titleInArray = arrays.title.toLowerCase()
                         if (titleInArray.includes(placeHolderVal.toLowerCase())) {
                             //Down here asign values to DOM using arrays.
-                            // console.log(arrays)
-                            // console.log(arrays.director)
                             document.querySelector('.title').innerText = arrays.title
                             document.querySelector('.episode').innerText = arrays.episode_id
+                            //Here I figured that it will be better for the openiing text to be created when needed
                             const openingWrap = document.querySelector('#openingWrap')
                             const opening = document.createElement('dl')
                             opening.className = 'opening'
@@ -44,16 +43,18 @@ window.onload = (e) => {
                             document.querySelector('.producer').innerText = arrays.producer
                         }
                     }
-                
             })
             .catch((error) => {
                 console.error("Error fetching data:", error)
         });
     }
     document.querySelector('#submit').addEventListener('click', (e) => {
+        
         e.preventDefault()
         tagleLoading()
         fetchData()
+        //bellow removes opening text when a new search is done so isn't x2
+        getElByClass('.opening').remove()
 
     })
 }
