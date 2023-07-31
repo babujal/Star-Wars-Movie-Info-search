@@ -12,15 +12,96 @@ body {
 form {
     margin:10px auto;
 }
-td {
-    padding: 0.5em;
-    font-size: 16pt;
+
+/* img {
+    width: 6em;
+} */
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.firstRow {
+    display: flex;
+    justify-content: space-around;
+} 
+.imgWrap:hover {
+    transform: scale(1.1);
+    transform: transform 1s ease;
+    box-shadow: 8px 4px 8px rgba(10, 10, 206, 0.8);
+    transition: all 0.4s ease;
+}
+.secondRow {
+    display: flex;
+    justify-content: space-around;
+}
+.imgWrap {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.imgWrap1{
+    display: flex;
+    background-image: url("https://sceneprints.com/cdn/shop/products/IS_2a24ef2e-f8ca-4a2f-92bb-b0bf773e1f88.jpg?v=1645837528");
+    width: 7em;
+    height: 8em;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+.imgWrap2{
+    display: flex;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg");
+    width: 7em;
+    height: 8em;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+.imgWrap3{
+    display: flex;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg");
+    width: 7em;
+    height: 8em;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+.imgWrap4{
+    display: flex;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg");
+    width: 7em;
+    height: 8em;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+.imgWrap5{
+    display: flex;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg");
+    width: 7em;
+    height: 8em;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+.imgWrap6{
+    display: flex;
+    background-image: url("https://bingeddata.s3.amazonaws.com/uploads/2022/07/star-wars-episode-iii-revenge-of-the-sith-seige-of-mandalore-super-cut.jpg");
+    width: 7em;
+    height: 8em;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+.spacer {
+    width: 30%;
 }
 
 #allData {
+    display: flex;
     height: 87vh;
     flex-direction: row;
+    width: 98vw;
+    justify-content: space-around;
 }
 #scrollBody {
     display: flex;
@@ -39,9 +120,25 @@ td {
     perspective: 400px;
 }
 
+#title{
+    height: 2em;
+    border-radius: 3px;
+    background-color: lightsteelblue;
+}
+#submit {
+    height: 2em;
+    border-radius: 5px;
+    background-color: lightsteelblue;
+}
+
 #list {
-    padding: 2rem;
-    margin: 5rem 0 3rem;
+    padding: 5px;
+    margin: 0rem 0 3rem;
+}
+td {
+    /* padding: 5px; */
+    font-size: 16pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .opening {
     color: #ffc909;
