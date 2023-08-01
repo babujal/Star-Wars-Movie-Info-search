@@ -1,15 +1,18 @@
+//callback to get el-id
 const $ = (id) => {return document.getElementById(id)}
+//callback to get el-class
 const getElByClass = (elClass) => {return document.querySelector(elClass)}
 window.onload = (e) => { 
+    //creates element for animated loading bar
     const taggleLoading = () => {
         const barDiv = document.querySelector('.barDiv')
         const loading = document.createElement('div')
         loading.id = 'loadingBar'
         barDiv.appendChild(loading)
         const collectingText = document.querySelector('#loadingBar')
-        collectingText.innerText = 'colecting data'
+        collectingText.innerText = 'loading...'
     } 
-
+    //callback 
     const fetchData = () =>  {
         const endPoint = "https://swapi.dev/api/films/"
         fetch(endPoint)
@@ -30,7 +33,7 @@ window.onload = (e) => {
                         const arrays = data.results[i]
                         let titleInArray = arrays.title.toLowerCase()
                         if ((titleInArray.includes(placeHolderVal.toLowerCase())) || (titleInArray.includes(getElByClass('.imgWrap').innerText))) {
-                            //Down here asign values to DOM using arrays.
+                            //Down here asign values to DOM using result.arrays.
                             document.querySelector('.title').innerText = arrays.title
                             document.querySelector('.episode').innerText = arrays.episode_id
                             //Here I figured that it will be better for the openiing text to be created when needed

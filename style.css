@@ -18,7 +18,7 @@ form {
 } */
 .imgContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 .firstRow {
@@ -92,16 +92,13 @@ form {
     background-position: center;
     margin: 5px;
 }
-.spacer {
-    margin-left: 20%;
-}
 
 #allData {
     display: flex;
-    height: 87vh;
+    max-height: 87vh;
     flex-direction: row;
-    width: 98vw;
-    justify-content: space-around;
+    max-width: 98vw;
+    justify-content: center;
 }
 #scrollBody {
     display: flex;
@@ -139,15 +136,18 @@ form {
     font-size: large;
 }
 
-#list {
+/* #list {
     padding: 5px;
     margin: 2.5rem 0 3rem;
-}
+} */
 td {
-    /* padding: 5px; */
     font-size: 16pt;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: bisque;
+    padding: 1em;
+}
+tr {
+    box-shadow: 8px 4px 8px rgba(10, 10, 206, 0.4);
 }
 .opening {
     color: #ffc909;
@@ -194,3 +194,30 @@ td {
         transform: translateZ(-2500px) rotateX(21deg);
     }
 }
+@media screen and (max-width: 840px) {
+    .imgContainer {
+     flex-direction: column;
+     justify-content: space-between;
+    }
+    p {
+     font-size: 16pt;
+    }
+ }
+ @media screen and (max-width: 500px) {
+    .imgWrap {
+        width: 5em;
+        height: 6em;
+    }
+td {
+     font-size: 12pt;
+    }
+ }
+ @media screen and (max-width: 300px) {
+    .imgWrap {
+        width: 4em;
+        height: 5em;
+    }
+td {
+     font-size: 10pt;
+    }
+ }
