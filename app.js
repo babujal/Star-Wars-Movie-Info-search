@@ -33,7 +33,7 @@ window.onload = (e) => {
                         const arrays = data.results[i]
                         let titleInArray = arrays.title.toLowerCase()
                         if ((titleInArray.includes(placeHolderVal.toLowerCase())) || (titleInArray.includes(getElByClass('.imgWrap').innerText))) {
-                            //Down here asign values to DOM using result.arrays.
+                            //Down here asign values to DOM using resultarrays.
                             document.querySelector('.title').innerText = arrays.title
                             document.querySelector('.episode').innerText = arrays.episode_id
                             //Here I figured that it will be better for the openiing text to be created when needed

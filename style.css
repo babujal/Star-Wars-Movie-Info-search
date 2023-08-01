@@ -221,3 +221,12 @@ td {
      font-size: 10pt;
     }
  }
+ @media screen and (max-height: 740px) {
+    .imgWrap {
+        width: 4em;
+        height: 5em;
+    }
+td {
+     font-size: 10pt;
+    }
+ }
