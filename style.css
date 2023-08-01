@@ -41,8 +41,8 @@ form {
 .imgWrap1{
     display: flex;
     background-image: url("https://sceneprints.com/cdn/shop/products/IS_2a24ef2e-f8ca-4a2f-92bb-b0bf773e1f88.jpg?v=1645837528");
-    width: 7em;
-    height: 8em;
+    width: 8em;
+    height: 9em;
     background-size: cover;
     background-position: center;
     margin: 5px;
@@ -50,8 +50,8 @@ form {
 .imgWrap2{
     display: flex;
     background-image: url("https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg");
-    width: 7em;
-    height: 8em;
+    width: 8em;
+    height: 9em;
     background-size: cover;
     background-position: center;
     margin: 5px;
@@ -59,8 +59,8 @@ form {
 .imgWrap3{
     display: flex;
     background-image: url("https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg");
-    width: 7em;
-    height: 8em;
+    width: 8em;
+    height: 9em;
     background-size: cover;
     background-position: center;
     margin: 5px;
@@ -68,8 +68,8 @@ form {
 .imgWrap4{
     display: flex;
     background-image: url("https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg");
-    width: 7em;
-    height: 8em;
+    width: 8em;
+    height: 9em;
     background-size: cover;
     background-position: center;
     margin: 5px;
@@ -77,8 +77,8 @@ form {
 .imgWrap5{
     display: flex;
     background-image: url("https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg");
-    width: 7em;
-    height: 8em;
+    width: 8em;
+    height: 9em;
     background-size: cover;
     background-position: center;
     margin: 5px;
@@ -86,14 +86,14 @@ form {
 .imgWrap6{
     display: flex;
     background-image: url("https://bingeddata.s3.amazonaws.com/uploads/2022/07/star-wars-episode-iii-revenge-of-the-sith-seige-of-mandalore-super-cut.jpg");
-    width: 7em;
-    height: 8em;
+    width: 8em;
+    height: 9em;
     background-size: cover;
     background-position: center;
     margin: 5px;
 }
 .spacer {
-    width: 30%;
+    margin-left: 20%;
 }
 
 #allData {
@@ -124,21 +124,30 @@ form {
     height: 2em;
     border-radius: 3px;
     background-color: lightsteelblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-weight: 800;
+    font-size: large;
 }
 #submit {
     height: 2em;
     border-radius: 5px;
     background-color: lightsteelblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-weight: 800;
+    font-size: large;
 }
 
 #list {
     padding: 5px;
-    margin: 0rem 0 3rem;
+    margin: 2.5rem 0 3rem;
 }
 td {
     /* padding: 5px; */
     font-size: 16pt;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: bisque;
 }
 .opening {
     color: #ffc909;
@@ -163,7 +172,7 @@ td {
     height: 100%;
     background-color: #4CAF50;
     width: 0%;
-    animation: loading 35s ease-in-out;
+    animation: loading 16s ease-in-out;
 }
 
 @keyframes loading {
