@@ -253,4 +253,8 @@ td {
     h1 {
         margin-top: 0;
     }
+     .imgContainer {
+        flex-direction: row;
+        justify-content: center;
+    }
  }
