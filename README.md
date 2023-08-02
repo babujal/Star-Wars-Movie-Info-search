@@ -38,7 +38,7 @@ Visit the site at [https://starwarsqueries.netlify.app/](https://starwarsqueries
 ## Unsolved Problems
 
 1- I would like to add more info about the movies but for the completation of the project will do it after with time.
-2- I Would like to add an h1 with star wars text and an h3 with instruction of usage.
+2- If clicked more than one in the first search it will doplicate the openiong of the movie. I have to work on that later
 
 ## Contact Information
 
